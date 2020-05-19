@@ -1,0 +1,20 @@
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+  implementation 'org.springframework:spring-tx'
+
+  implementation 'org.springframework.boot.experimental:spring-boot-starter-data-r2dbc:0.1.0.M1'
+  implementation 'org.springframework.boot.experimental:spring-boot-actuator-autoconfigure-r2dbc:0.1.0.M1'
+
+//  implementation 'io.projectreactor.addons:reactor-extra'
+//  implementation 'io.projectreactor.addons:reactor-pool:0.0.1.M1'
+
+  developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+  runtimeOnly 'com.h2database:h2'
+  runtimeOnly 'mysql:mysql-connector-java'
+  runtimeOnly 'com.github.jasync-sql:jasync-r2dbc-mysql:1.0.7'
+//  runtimeOnly 'dev.miku:r2dbc-mysql:0.8.0.M8'
+  runtimeOnly 'io.r2dbc:r2dbc-pool:0.8.0.M8'
+  runtimeOnly 'io.r2dbc:r2dbc-h2:0.8.0.M8'
+
+}

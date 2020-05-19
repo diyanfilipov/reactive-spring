@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryAutoConfiguration, org.springframework.boot.autoconfigure.r2dbc.R2dbcAutoConfiguration, org.springframework.boot.autoconfigure.data.r2dbc.R2dbcRepositoriesAutoConfiguration
+  h2:
+    console:
+      enabled: true

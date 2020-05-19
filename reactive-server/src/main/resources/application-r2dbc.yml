@@ -1,0 +1,17 @@
+
+spring:
+  r2dbc:
+    url: r2dbc:pool:mysql://127.0.0.1:3306/spring_reactive
+    username: root
+    password: ''
+    name: spring_reactive
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration
+
+logging:
+  level:
+    org.springframework.data.r2dbc: DEBUG
